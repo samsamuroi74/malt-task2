@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mainpage</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css.map">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="jquery.js"></script>
+        <script src="bootstrap.js"></script>
+        <script src="bootstrap.js.map"></script>
+    </head>
+    <body class="bg-light">
+        <div class="container-fluid">
+            <div class="card container-fluid bg-white text-justify" style="position:fixed;z-index: 10;">
+                <div class="row">
+                        <button class="btn col-1" onclick="Opening()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                        <input class="col-1 border border-right-rounded my-3" type="text" placeholder="Search.." style="border-top-left-radius:  20px;border-bottom-left-radius:  20px;height:40px;">
+                        <button class="col-1 bg-white border my-3" style="border-top-right-radius:  20px;border-bottom-right-radius:  20px;width:50px;height: 40px;"><i class="glyphicon glyphicon-search"></i></button>
+                        <div class="col-1 dropdown pt-2 my-2">
+                            <button type="button" class="btn bg-white dropdown-toggle" data-toggle="dropdown" style="border-radius: 20px;">
+                              En
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Link 1</a>
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                            <button class=" btn-outline-primary bg-white" style="border-radius: 20px;height:40px;width:70px;">BUY</button>
+                        </div>
+                        <div class="col-3 text-center display-4"><strong>MALtech</strong></div>
+                        <div class="col-1 pt-2 my-2" style="display:flex;">
+                            <div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div> 
+                        </div>
+                        <div class="col-2 pt-2 my-2">
+                            <button class="btn"><i class="glyphicon glyphicon-th-large"></i></button>
+                            <button class="btn"><i class="glyphicon glyphicon-bell"></i></button>
+                            <button class="btn"><i class="glyphicon glyphicon-fullscreen"></i></button>
+                        </div>
+                        <div class="col-1"><p class="text text-right pt-4">Sarah Kortney</p></div>
+                        <div class="col-1"><img class="rounded-circle" height="60px" width="60px;" src="saint.png"></div>         
+                </div>
+            </div>
+        </div>
+        <section class="container-fluid bg-light my-5">
+         <div class="row ">
+            <!--SECTION 1-->
+            <div class="col-1 bg-white" id="side-nav" style="display:none;position:fixed;border-top-right-radius:50px;width: 10%;">
+
+                <div class=" my-5 p-5 text-primary">
+                  <span class="glyphicon glyphicon-list-alt" style="font-size: 20px;"><a class="text-primary" href="dashboard.html">Dashboard</a></span>
+                </div><br/>
+                <div class="my-5 p-5 bg-primary rounded-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                      <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                    </svg>
+                  <a class=" text-white" href="pages.html">Pages</a>
+              </div><br/>
+                <div class="my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+                    </svg>
+                    <a href="app.html">Applications</a>
+                  </div><br/>
+                <div class=" my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                      <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                    </svg>
+                    <a href="app.html">About</a>
+                  </div><br/>
+                <div class="my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-menu-app" viewBox="0 0 16 16">
+                      <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    <a href="app.html">Community</a>
+                  </div><br/>
+                <div class="my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-break" viewBox="0 0 16 16">
+                      <path d="M0 10.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zM12 0H4a2 2 0 0 0-2 2v7h1V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v7h1V2a2 2 0 0 0-2-2zm2 12h-1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2H2v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2z"/>
+                    </svg>
+                    <a href="app.html">UI</a>
+                  </div> <br/>
+              </div>
+              <div class="col-1 bg-white" id="side-nav2" style="position:fixed;border-top-right-radius:50px;width: 2%;">
+                <div class=" my-5 p-5 bg-primary rounded-circle text-white">
+                  <span class="glyphicon glyphicon-list-alt" style="font-size: 20px;"></span>
+                </div><br/>
+                <div class="my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                      <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                    </svg>
+                  
+              </div><br/>
+                <div class="my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+                    </svg>
+
+                  </div><br/>
+                <div class=" my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                      <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                    </svg>
+                    
+                  </div><br/>
+                <div class="my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-menu-app" viewBox="0 0 16 16">
+                      <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    
+                  </div><br/>
+                <div class="my-5 p-5 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-break" viewBox="0 0 16 16">
+                      <path d="M0 10.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zM12 0H4a2 2 0 0 0-2 2v7h1V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v7h1V2a2 2 0 0 0-2-2zm2 12h-1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2H2v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2z"/>
+                    </svg>
+                    
+                  </div> <br/>
+              </div>
+            <div class="col-1 m-5"></div>
+             <!--SECTION 2-->
+             <div class="col-6 w-5 mx-5 my-5" >
+                <div class="row m-5">
+                <div class="row">
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-3 p-5" ><div style="display:flex;"><i class="glyphicon glyphicon-refresh"></i><h2>Developer Survey</h2></div></div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-5 p-5"><p><a href="">Home</a> | <a href="">Applications</a> | <a href="">Survey</a></p></div>
+                    <button class="col-1 border border-right-rounded my-5 " type="text" style="border-top-left-radius:  20px;border-bottom-left-radius:  20px;height:40px;">Save</button>
+                        <button class="col-1 bg-white border my-5 " style="border-top-right-radius:  20px;border-bottom-right-radius:  20px;width:50px;height: 40px;"><i class="glyphicon glyphicon-triangle-bottom"></i></button>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 m-2 p-3"><button class="btn border" style="border-radius:20px;">Orderby :Title<i class="glyphicon glyphicon-triangle-bottom"></i></button>
+                        <input class="border h-5" placeholder="Search" style="border-radius: 20px;background: none;"></input>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-3 p-5" style="text-align: right;">
+                        <p>1-10 of 40<button class="btn border" style="border-radius: 20px;">10<i class="glyphicon glyphicon-triangle-bottom"></i></button></p>
+                    </div>   
+                </div>
+            
+                <div class="row mx-10">
+                        <div class="col-4 bg-white text-dark my-3 mx-2 h-100" style="border-radius: 20px;box-shadow: 5px 5px 5px 5px #8888;">
+                            <div class="m-2"><br/>
+                                <h4>Summary</h4><br/><br/>
+                                <dl>
+                                    <dt style="color: grey;">
+                                        Title
+                                    </dt><br/>
+                                    <dd>
+                                        Developer Survey
+                                    </dd><br/><br/>
+                                    <dt style="color: grey;">Details</dt><br/>
+                                    <dd>
+                                        As a software professional, you are an innovator, problem solver, researcher, and a creative. Your job is to take big ideas and make them a reality. With the right support, the possibilities are endless.
+                                        <br/><br/>When Road blocks are removed and you're allowed do your best work, you change the world. 
+                                    </dd><br/><br/>
+                                    <dt style="color: grey;">
+                                        Category
+                                    </dt><br/>
+                                    <dd>
+                                        Development
+                                    </dd><br/><br/>
+                                    <dt style="color: grey;">
+                                        Label
+                                    </dt><br/>
+                                    <dd>
+                                        <button id="tooltip" type="button" class="border-primary text-primary bg-white" data-toggle="Tooltip" >EDUCATION</button>
+                                    </dd><br/><br/>
+    
+                                </dl>
+    
+                            </div>
+                        </div>
+                    
+                        <div class="col-7" style="border-radius: 20px;">
+                            
+                               <div class="row bg-white m-5 p-5" style="border-radius: 25px;box-shadow: 5px 5px 5px 5px #8888;" >
+                                   <div class="col-1 p-3 rounded-circle border border-primary"><mark class="bg-white">1</mark></div>
+                                   <h3 class="col-5 pt-3">Name</h3>
+                                   <i class="col-2 text-right glyphicon glyphicon-pencil text-primary mx-6 my-4" style="margin-left: 20px;"></i>
+                                   <i class="col-2 glyphicon glyphicon-chevron-down mx-4 my-4"></i>
+                                </div>
+                               <div class="row bg-white m-5 p-5" style="border-radius: 25px;box-shadow: 5px 5px 5px 5px #8888;">
+                                    <div class="col-1 p-3 rounded-circle border border-primary"><mark class="bg-white">1</mark></div>
+                                    <h3 class="col-5 pt-3">Age</h3>
+                                    <i class="col-2 text-right glyphicon glyphicon-pencil text-primary mx-6 my-4" style="margin-left: 20px;"></i>
+                                    <i class="col-2 glyphicon glyphicon-chevron-down mx-4 my-4"></i>
+                                </div>
+                                <div class="row bg-white m-5 p-5" style="border-radius: 25px;box-shadow: 5px 5px 5px 5px #8888;">
+                                    <div class="col-1 p-3 rounded-circle border border-primary"><mark class="bg-white">1</mark></div>
+                                    <h3 class="col-5 pt-3">Experience</h3>
+                                    <i class="col-2 text-right glyphicon glyphicon-pencil text-primary mx-6 my-4" style="margin-left: 20px;"></i>
+                                    <i class="col-2 glyphicon glyphicon-chevron-down mx-4 my-4"></i>
+                                </div>
+                                <div class="row bg-white m-5 p-5" style="border-radius: 25px;box-shadow: 5px 5px 5px 5px #8888;">
+                                    <div class="col-1 p-3 rounded-circle border border-primary"><mark class="bg-white">1</mark></div>
+                                    <h3 class="col-5 pt-3">Skills</h3>
+                                    <i class="col-2 text-right glyphicon glyphicon-pencil text-primary mx-6 my-4" style="margin-left: 20px;"></i>
+                                    <i class="col-2 glyphicon glyphicon-chevron-down mx-4 my-4"></i>
+                                </div>
+                                <div class="row bg-white m-5 p-5" style="border-radius: 25px;box-shadow: 5px 5px 5px 5px #8888;">
+                                    <div class="col-1 p-3 rounded-circle border border-primary"><mark class="bg-white">1</mark></div>
+                                    <h3 class="col-5 pt-3">Position</h3>
+                                    <i class="col-2 text-right glyphicon glyphicon-pencil text-primary mx-6 my-4" style="margin-left: 20px;"></i>
+                                    <i class="col-2 glyphicon glyphicon-chevron-down mx-4 my-4"></i>
+                                </div>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>              
+         <div class="col-3 card bg-white p-3" style="box-shadow: 5px 5px 5px 5px #8888;border-top-left-radius: 30px;">
+            <!------------------------------------------------LAST SIDE BAR PART----------------------------------->
+                <div class="col-7">
+                    <div>Status</div><br/>
+                <div><span class="glyphicon glyphicon-refresh"></span> Pending tasks</div>
+                <div><span class="glyphicon glyphicon-ok-circle"></span> Completed tasks</div>
+                <hr/>
+                <div>Categories</div><br/>
+                <div><input type="checkbox">Flexbox</div>
+                <div><input type="checkbox">Sass</div>
+                <div><input type="checkbox">React</div>
+                <hr/>
+                <button id="tooltip" type="button" class="border-primary text-primary bg-white" data-toggle="Tooltip" >NEWFRAMEWORK</button>
+                <button id="tooltip" type="button" class="border-primary text-primary bg-white" data-toggle="Tooltip" >EDUCATION</button><p></p>
+                <button id="tooltip" type="button" class="border-primary text-primary bg-white" data-toggle="Tooltip" >PERSONAL</button>
+                
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="index.html">index</a></li> 
+                    <li class="page-item active"><a class="page-link" href="pages.html">pages</a></li>
+                    <li class="page-item"><a class="page-link" href="applications.html">application</a></li>
+                </ul>
+
+                </div>
+            </div>
+    
+    </div>
+    </section> 
+        <script src="style.js"></script>
+    </body>
+</html>
